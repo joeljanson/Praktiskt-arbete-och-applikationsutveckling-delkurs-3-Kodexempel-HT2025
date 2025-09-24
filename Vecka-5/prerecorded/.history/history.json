@@ -1,0 +1,138 @@
+{
+	"user1234": {
+		"1234": {
+			"messages": [
+				{
+					"type": "human",
+					"data": {
+						"content": "Hello, my name is Joel and I'm a software developer!",
+						"additional_kwargs": {},
+						"response_metadata": {}
+					}
+				},
+				{
+					"type": "human",
+					"data": {
+						"content": "What did I say my name was?",
+						"additional_kwargs": {},
+						"response_metadata": {}
+					}
+				},
+				{
+					"type": "ai",
+					"data": {
+						"content": "Hello, Joel! It's great to meet you. As a software developer, what kind of projects are you working on, or is there something specific you'd like to discuss or need help with?",
+						"tool_calls": [],
+						"invalid_tool_calls": [],
+						"additional_kwargs": {},
+						"response_metadata": {}
+					}
+				},
+				{
+					"type": "ai",
+					"data": {
+						"content": "I'm sorry, but I don't have access to previous conversations or any personal information. If you tell me your name, I can remember it for the duration of our chat!",
+						"tool_calls": [],
+						"invalid_tool_calls": [],
+						"additional_kwargs": {},
+						"response_metadata": {}
+					}
+				},
+				{
+					"type": "human",
+					"data": {
+						"content": "Hello, my name is Joel and I'm a software developer!",
+						"additional_kwargs": {},
+						"response_metadata": {}
+					}
+				},
+				{
+					"type": "ai",
+					"data": {
+						"content": "Hello again, Joel! It's nice to meet you. How can I assist you today? Are you working on any interesting projects or do you have any questions?",
+						"tool_calls": [],
+						"invalid_tool_calls": [],
+						"additional_kwargs": {},
+						"response_metadata": {}
+					}
+				},
+				{
+					"type": "human",
+					"data": {
+						"content": "What did I say my name was?",
+						"additional_kwargs": {},
+						"response_metadata": {}
+					}
+				},
+				{
+					"type": "ai",
+					"data": {
+						"content": "You said your name is Joel. How can I assist you today, Joel?",
+						"tool_calls": [],
+						"invalid_tool_calls": [],
+						"additional_kwargs": {},
+						"response_metadata": {}
+					}
+				},
+				{
+					"type": "human",
+					"data": {
+						"content": "What did I say my name was?",
+						"additional_kwargs": {},
+						"response_metadata": {}
+					}
+				},
+				{
+					"type": "ai",
+					"data": {
+						"content": "You said your name is Joel. How can I help you today?",
+						"tool_calls": [],
+						"invalid_tool_calls": [],
+						"additional_kwargs": {},
+						"response_metadata": {}
+					}
+				},
+				{
+					"type": "human",
+					"data": {
+						"content": "I'm thinking about a job as a programmer, would I be suitable for it?",
+						"additional_kwargs": {},
+						"response_metadata": {}
+					}
+				},
+				{
+					"type": "ai",
+					"data": {
+						"content": "Based on your introduction as a software developer, it sounds like you already have some experience in programming! If you're considering a job as a programmer, here are a few factors to consider to determine your suitability:\n\n1. **Skills and Knowledge**: Do you have the necessary programming skills and knowledge of relevant technologies? Familiarity with programming languages (like Python, Java, C++, etc.), frameworks, and tools is essential.\n\n2. **Problem-Solving Ability**: Programming often involves solving complex problems. If you enjoy tackling challenges and finding solutions, that’s a good sign.\n\n3. **Continuous Learning**: The tech field is always evolving. Are you willing to learn new languages, tools, and methodologies as needed?\n\n4. **Collaboration and Communication**: Many programming jobs require working in teams. Good communication skills can be very beneficial.\n\n5. **Passion for Technology**: A genuine interest in technology and software development can make the job more enjoyable and fulfilling.\n\nIf you feel confident in these areas, you may be well-suited for a programming job! If you have specific concerns or questions about the job market or skills, feel free to ask!",
+						"tool_calls": [],
+						"invalid_tool_calls": [],
+						"additional_kwargs": {},
+						"response_metadata": {}
+					}
+				}
+			]
+		},
+		"session-1234": {
+			"messages": [
+				{
+					"type": "human",
+					"data": {
+						"content": "What did I say my name was?",
+						"additional_kwargs": {},
+						"response_metadata": {}
+					}
+				},
+				{
+					"type": "ai",
+					"data": {
+						"content": "I'm sorry, but I don't have access to previous conversations or any personal information. If you tell me your name, I can remember it for the duration of our chat!",
+						"tool_calls": [],
+						"invalid_tool_calls": [],
+						"additional_kwargs": {},
+						"response_metadata": {}
+					}
+				}
+			]
+		}
+	}
+}
