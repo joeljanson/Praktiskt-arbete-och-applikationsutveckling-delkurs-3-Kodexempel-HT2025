@@ -3,6 +3,7 @@ node_modules/
 
 # Ignorera alla .env filer
 .env
+*.env
 
 # Ignorera eventuella byggfiler
 dist/
