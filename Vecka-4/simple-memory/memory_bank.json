@@ -1,0 +1,50 @@
+[
+  {
+    "text": "This user is a software developer.",
+    "expires": false
+  },
+  {
+    "text": "This user lives in Stockholm.",
+    "expires": false
+  },
+  {
+    "text": "This user likes being in nature.",
+    "expires": false
+  },
+  {
+    "text": "This user likes to travel.",
+    "expires": false
+  },
+  {
+    "text": "This user's name is Joel.",
+    "expires": false
+  },
+  {
+    "text": "This user likes music.",
+    "expires": false
+  },
+  {
+    "text": "This user is working on a JavaScript project involving Tone.js to build a sampler.",
+    "expires": false
+  },
+  {
+    "text": "This user has two kids.",
+    "type": "personal",
+    "expires": false
+  },
+  {
+    "text": "This user has a dog.",
+    "type": "personal",
+    "expires": false
+  },
+  {
+    "text": "This user had a really good day at work today creating a database with semantic search.",
+    "type": "work",
+    "expires": false
+  },
+  {
+    "text": "This user has a cat.",
+    "type": "personal",
+    "expires": false
+  }
+]
