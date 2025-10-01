@@ -25,7 +25,7 @@ async function loadAndSplitPDF(pdfPath) {
 		chunkSize: 3200,
 		chunkOverlap: 1600,
 	});
-	const chunks = await textSplitter.createDocuments([result[0].pageContent]);
+	const chunks = await textSplitter.splitDocuments(result);
 	//console.log(chunks);
 
 	await vectorStore.addDocuments(chunks);
@@ -33,22 +33,22 @@ async function loadAndSplitPDF(pdfPath) {
 
 async function main(prompt) {
 	await loadAndSplitPDF("./tonejs.pdf");
-/* 
+
 	const similaritySearchWithScoreResults =
-		await vectorStore.similaritySearchWithScore(prompt, 2);
+		await vectorStore.similaritySearchWithScore(prompt, 4);
 	for (const [doc, score] of similaritySearchWithScoreResults) {
 		console.log("\n\n\n====================\n\n\n");
 		console.log("Score: ", score);
 		console.log("Content: ", doc.pageContent);
-	} */
+	}
 
-	
+	/* 
     const retriever = vectorStore.asRetriever();
 
     const result = await retriever.invoke(prompt);
     console.log("\n\n\n Found the following relevant chunks:\n\n\n");
-    console.log(result);
+    console.log(result); */
    
 }
 
-main("who are involved in this article?");
+main("who is acknowledged?");
