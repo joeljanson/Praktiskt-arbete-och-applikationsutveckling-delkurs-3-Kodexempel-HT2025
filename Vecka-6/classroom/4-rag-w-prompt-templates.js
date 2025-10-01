@@ -69,7 +69,16 @@ async function chatWithRetrivalAndPromptTemplates(query) {
 		.pipe(llm)
 		.pipe(new StringOutputParser())
 		.pipe(retriever)
-        .pipe(answerTemplate) //context {context:retriverResults??? question: query?? RunnablePassthrough}
+        .pipe((lastStep)=>{
+            console.log(lastStep);
+            return {
+                
+							context: lastStep,
+							question:
+								"I was reading about tone.js the other day and I would like to know who the author would like to thank for writing tone.js?",
+						};
+        })
+        .pipe(answerTemplate)
         .pipe(llm)
         .pipe(new StringOutputParser());
 

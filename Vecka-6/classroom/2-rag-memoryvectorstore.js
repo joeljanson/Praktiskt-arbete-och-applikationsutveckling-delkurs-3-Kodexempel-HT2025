@@ -35,7 +35,7 @@ async function loadAndSplitWikipedia(query) {
 async function main(prompt) {
     await loadAndSplitWikipedia(prompt);
 
-
+/* 
     const similaritySearchWithScoreResults =
 			await vectorStore.similaritySearchWithScore(
 				"What is retrieval?",
@@ -45,15 +45,15 @@ async function main(prompt) {
         console.log("\n\n\n====================\n\n\n");
         console.log("Score: ", score);
         console.log("Content: ", doc.pageContent);
-    }
+    } */
 
-    /*
+    
     const retriever = vectorStore.asRetriever();
 
     const result = await retriever.invoke("What is retrieval about in Langchain?");
     console.log("\n\n\n Found the following relevant chunks:\n\n\n");
     console.log(result);
-    */
+   
 }
 
 main("What is retrieval in langchain?");

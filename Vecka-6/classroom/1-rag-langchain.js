@@ -29,6 +29,12 @@ const embeddings = new OpenAIEmbeddings({
 	apiKey: apiKey,
 });
 
+const vectorStore = new SupabaseVectorStore(embeddings, {
+	client: supabase,
+	tableName: "documents",
+	queryName: "match_documents",
+});
+
 async function uploadPDFToSupabase(pdfPath) {
 	try {
 		const loader = new PDFLoader(pdfPath);
@@ -42,11 +48,11 @@ async function uploadPDFToSupabase(pdfPath) {
 
 		const chunks = await textSplitter.splitDocuments(docs);
 		console.log(chunks);
-
+/* 
         const vectorStore = await SupabaseVectorStore(embeddings, {
             client:supabase,
             tableName: "documents",
-        });
+        }); */
 
         await vectorStore.addDocuments(chunks);
         
