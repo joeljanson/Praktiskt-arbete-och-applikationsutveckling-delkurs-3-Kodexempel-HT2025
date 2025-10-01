@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step Sequencer</title>
+    <link rel="stylesheet" href="src/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <h1>Step Sequencer</h1>
+      <div class="controls">
+        <button id="play-button">Play</button>
+        <label for="tempo">Tempo</label>
+        <input type="range" id="tempo" name="tempo" min="60" max="240" value="120">
+        <span id="tempo-value">120</span>
+      </div>
+      <div id="sequencer"></div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

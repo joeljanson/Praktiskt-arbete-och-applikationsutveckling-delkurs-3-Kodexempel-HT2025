@@ -1,0 +1,19 @@
+{
+	"name": "mcp-gitmcp-demo",
+	"version": "1.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "node --loader ts-node/esm src/index.ts",
+		"build": "tsc",
+		"start": "node dist/index.js"
+	},
+	"dependencies": {
+		"dotenv": "^16.4.5",
+		"openai": "^5.22.0"
+	},
+	"devDependencies": {
+		"@types/node": "^22.5.0",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.6.3"
+	}
+}

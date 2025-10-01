@@ -1,0 +1,60 @@
+body {
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+}
+
+#app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#play-button {
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+#play-button.playing {
+  background-color: #f00;
+  color: #fff;
+}
+
+#sequencer {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  gap: 5px;
+}
+
+.step {
+  width: 100%;
+  padding-bottom: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.step.active {
+  background-color: #f00;
+}
+
+.step.current {
+  background-color: #ff0;
+}
