@@ -43,3 +43,10 @@ export const triageAgent = new Agent({
     }),
   ],
 });
+
+export const triageHandoffAgent = Agent.create({
+	name: "Triage agent",
+	instructions:
+		"You are a triage agent. Your job is to route questions to the correct specialist: either the Math Tutor or the History Tutor.",
+	handoffs: [historyTutor, mathTutor],
+});
