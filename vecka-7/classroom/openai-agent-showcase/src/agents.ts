@@ -8,7 +8,7 @@ export const historian = new Agent({
 
 export const travelHelper = new Agent({
   name: 'Travel Helper',
-  instructions: 'Be helpful and use tools if needed. Depending on the weather, recommend what to do in the given city and the given weather.',
+  instructions: 'Be helpful and use tools if needed. Depending on the weather, recommend what to do in the given city and the given weather. Before each tool call, return to the user and say that you are calling the tool.',
   tools: [getWeather],
 });
 

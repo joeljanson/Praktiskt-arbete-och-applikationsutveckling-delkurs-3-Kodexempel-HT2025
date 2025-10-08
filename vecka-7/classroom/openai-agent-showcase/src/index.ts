@@ -11,9 +11,9 @@ import { runHandoffExample } from './examples/handoff';
 async function main() {
   // Run each example sequentially
   //await runBasicExample();
-  //await runToolExample();
+  await runToolExample();
   //await runConversationExample();
-  await runHandoffExample();
+  //await runHandoffExample();
 }
 
 
